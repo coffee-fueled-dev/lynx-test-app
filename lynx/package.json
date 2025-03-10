@@ -1,0 +1,34 @@
+{
+  "name": "lynx-test-app-lynx",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "unocss \"./src/**/*.{js,ts,jsx,tsx,mdx}\" -o src/uno.css & rspeedy build",
+    "dev": "unocss \"./src/**/*.{js,ts,jsx,tsx,mdx}\" -o src/uno.css -w & rspeedy dev",
+    "preview": "rspeedy preview"
+  },
+  "dependencies": {
+    "@lynx-js/react": "^0.105.0",
+    "@unocss/reset": "^66.1.0-beta.3",
+    "clsx": "^2.1.1",
+    "jotai": "^2.12.1",
+    "react-router": "6",
+    "tailwind-merge": "^3.0.2",
+    "unocss": "^66.1.0-beta.3"
+  },
+  "devDependencies": {
+    "@lynx-js/qrcode-rsbuild-plugin": "^0.3.3",
+    "@lynx-js/react-rsbuild-plugin": "^0.9.0",
+    "@lynx-js/rspeedy": "^0.8.2",
+    "@lynx-js/types": "^3.2.0",
+    "@rsbuild/plugin-image-compress": "^1.1.0",
+    "@rsbuild/plugin-node-polyfill": "^1.3.0",
+    "@rsbuild/plugin-type-check": "^1.2.1",
+    "@types/react": "^18.3.18",
+    "@unocss/webpack": "^66.1.0-beta.3",
+    "typescript": "~5.7.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
