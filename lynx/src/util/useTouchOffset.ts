@@ -1,6 +1,8 @@
 import { useMainThreadRef } from "@lynx-js/react";
 import type { MainThread } from "@lynx-js/types";
 
+// Taken from lynx docs: https://lynxjs.org/guide/start/tutorial-product-detail.html#simplifying-code-with-hooks
+
 export function useTouchOffset({
   onOffsetUpdate,
 }: {
